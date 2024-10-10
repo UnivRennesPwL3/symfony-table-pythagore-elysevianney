@@ -21,7 +21,7 @@ class PythagorUtility {
                 $html .= "<td>$i</td>";
                 for ($j = 1; $j <= 10; $j++) {
                     $html .= "<td  style=\"border: 3px solid black;\">";
-                    $resul = $i*$j;
+                    $resul = $i === $j ? "X"  : $i*$j;
                     $html .= "$resul";
                     $html .= "</td>";
                 }
